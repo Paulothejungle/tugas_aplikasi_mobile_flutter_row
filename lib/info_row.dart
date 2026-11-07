@@ -45,10 +45,13 @@ class InfoRow extends StatelessWidget {
  
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(icon),
-      title: Text(label),
-      subtitle: Text(catatan == null ? value : '$value · $catatan'),
+    return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 8),
+      child: ListTile(
+        leading: Icon(icon),
+        title: Text(label),
+        subtitle: Text(catatan == null ? value : '$value · $catatan'),
+      )
     );
   }
 }
