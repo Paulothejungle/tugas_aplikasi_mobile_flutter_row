@@ -11,9 +11,12 @@ class InfoRowApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Profil Saya'),
         centerTitle: true,
+        backgroundColor: Colors.indigo,
+        foregroundColor: Colors.white
         ),
         body: const Column(
           children: [
+            SizedBox(height: 20),
             ProfileAvatar(),
             InfoRow(icon: Icons.mail_outline, label: 'Email', value: 'rival@gmail.com'),
             InfoRow(label: 'Telepon', value: '+62 812-3456-7890', icon: Icons.phone),
